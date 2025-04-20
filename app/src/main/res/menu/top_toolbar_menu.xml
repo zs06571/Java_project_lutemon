@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_lutemon_details"
+        android:title="@string/lutemon_detail"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_lutemon_list"
+        android:title="@string/lutemon_list"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_statistics"
+        android:title="@string/statistics"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/logout"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

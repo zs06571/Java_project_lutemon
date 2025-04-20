@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Java_project_lutemon</string>
+    <string name="victory">Victory！</string>
+    <string name="defeat">defeat</string>
+    <string name="exp_gained">Gain Exp: %d</string>
+    <string name="create_lutemon">Create Lutemon</string>
+    <string name="hint_lutemon_name">Enter Lutemon name</string>
+    <string name="error_empty_name">Please enter a name</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="home">Home</string>
+    <string name="list">List</string>
+    <string name="battle">Battle</string>
+    <string name="battle_description">Fight with your Lutemons</string>
+    <string name="training">Training</string>
+    <string name="training_description">Train your Lutemons</string>
+    <string name="storage">Storage</string>
+    <string name="lutemons_description">View your collection</string>
+    <string name="create_description">Add new Lutemon</string>
+    <string name="lutemon_list">Lutemon List</string>
+    <string name="lutemon_detail">Lutemon Detail</string>
+    <string name="statistics">Statistics</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="create_failed">Create failed: </string>
+    <string-array name="lutemon_types">
+        <item>White</item>
+        <item>Green</item>
+        <item>Pink</item>
+        <item>Orange</item>
+        <item>Black</item>
+    </string-array>
+    <string name="lutemon_type_hint">Lutemon Type</string>
+    <string name="lutemon_type_desc">Select Lutemon type from dropdown list</string>
+    <string name="a11y_lutemon_type">Lutemon type selection</string>
+    <string name="a11y_current_selection">Current selection: %s</string>
+    <string name="lutemon_created_success">Lutemon created successfully!</string>
+    <string name="create_failed_prefix">Failed to create: </string>
+    <string name="select_lutemon_type_helper">Choose a Lutemon type</string>
+    <string name="lutemon_name_hint">Enter Lutemon name</string>
+    <string name="lutemon_type_spinner_desc">Dropdown menu to select Lutemon type</string>
+    <string name="a11y_lutemon_type_full">Lutemon type selector, currently selected: %1$s</string>
+    <string name="lutemon_preview_desc">Lutemon type preview</string>
+    <string name="error_select_type">Please select a Lutemon type</string>
+    <string name="stats_title">Primary Stats</string>
+    <string name="lutemon_stats_format">ATK: %d, DEF: %d, HP: %d</string>
+    <string name="storage_is_empty">Storage is empty</string>
+    <string name="check_statistical_data">Check Statistical Data</string>
+    <string name="move_to_battle_lineup">Move to Battle Lineup</string>
+    <string name="release_lutemon">Release Lutemon</string>
+    <string name="cd_lutemon_card">Lutemon card for %1$s, Attack: %2$d, Defense: %3$d</string>
+    <string name="cd_lutemon_avatar">Profile image of %1$s</string>
+    <string name="cd_state_rest">Resting state</string>
+    <string name="cd_state_battle">In battle</string>
+    <string name="cd_state_training">Training</string>
+    <string name="cd_state_icon">State Icons</string>
+    <string name="cd_lutemon_list">List of Lutemons</string>
+    <string name="bottom_navigation_desc">Main navigation</string>
+    <string name="create_lutemon_desc">Create new Lutemon</string>
+    <string name="lutemon_list_desc">List of Lutemons</string>
+    <string name="lutemon_detail_desc">Detail of Lutemon</string>
+    <string name="move_to_storage">Move to Storage</string>
+    <string name="release">Release</string>
+    <string name="fab_create_description">Create new item</string>
+    <string name="train_attack">Train Attack</string>
+    <string name="train_defense">Train Defense</string>
+    <string name="train_stamina">Train Stamina</string>
+    <string name="training_progress">Training Progress</string>
+    <string name="lutemon_collection">Lutemon Collection</string>
+    <string name="battle_lineup">Battle Lineup</string>
+    <string name="logout">Log Out</string>
+    <string name="lutemon_name">Lutemon Name</string>
+    <string name="skill_icon">Skill Icon</string>
+    <string name="lutemon_skill_format">Skill: %s</string>
+    <string name="lutemon_skill_placeholder">No skill</string>
+    <string name="training_stats">Training Stats</string>
+    <string name="battle_stats">Battle Stats</string>
+    <string name="desc_recycler_lutemons">Lutemon list showing all available creatures</string>
+    <string name="status_icon">Status Icon</string>"
+    <string-array name="lutemon_type_array">
+        <item>ALL</item>
+        <item>WHITE</item>
+        <item>BLACK</item>
+        <item>GREEN</item>
+        <item>PINK</item>
+        <item>ORANGE</item>
+    </string-array>
+</resources>

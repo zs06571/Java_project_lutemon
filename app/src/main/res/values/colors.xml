@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lutemon_white_color">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#00FF00</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="purple_500">#6A1B9A</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="background">#FAFAFA</color>
+    <color name="teal_700">#018786</color>
+    <color name="gray">#808080</color>
+    <color name="purple_100">#E1BEE7</color>
+    <color name="purple_800">#6A1B9A</color>
+    <color name="hp_green">#4CAF50</color>
+    <color name="state_battle">#FF5252</color>
+    <color name="state_training">#FFC107</color>
+    <color name="text_secondary">#FF5252</color>
+
+    <color name="selector_dropdown_hint">@color/gray_500</color>
+    <color name="mtrl_textinput_default_hint_text_color">@color/gray_500</color>
+
+    <color name="selector_dropdown_stroke_normal">@color/gray_500</color>
+    <color name="selector_dropdown_stroke_focused">@color/purple_500</color>
+    <color name="purple_200">#BB86FC</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="release_button_light">#FFCDD2</color>
+    <color name="cancel_button_light">#FFCDD2</color>
+    <color name="light_red">#FFCDD2</color>
+    <color name="light_blue">#BBDEFB</color>
+    <color name="light_green">#C8E6C9</color>
+    <color name="red">#FF5252</color>
+    <color name="lutemon_card_normal">#33FFFFFF</color>
+    <color name="lutemon_card_selected">#FFFFFFFF</color>
+</resources>

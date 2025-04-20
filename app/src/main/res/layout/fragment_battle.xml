@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/battle">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/battle_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/purple_100"
+        app:title="Battle"
+        android:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:id="@+id/animationOverlay">
+
+                <LinearLayout
+                    android:id="@+id/lutemon_battle_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/leftStats"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_left_avatar"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginBottom="4dp"
+                            android:backgroundTint="@color/black"
+                            android:src="@drawable/ic_lutemon_placeholder"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/tv_left_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pinky"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_left_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ATK: 7  DEF: 2  EXP: 0"
+                            android:backgroundTint="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/leftHealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HP: 100"
+                            android:backgroundTint="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <ProgressBar
+                            android:id="@+id/hpBarLeft"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:max="100"
+                            android:progress="100"
+                            android:progressTint="@color/red"
+                            android:indeterminate="false" />
+
+                        <LinearLayout
+                            android:id="@+id/leftBuffIcons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VS"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginHorizontal="12dp"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/rightStats"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:id="@+id/img_right_avatar"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginBottom="4dp"
+                            android:backgroundTint="@android:color/black"
+                            android:src="@drawable/ic_lutemon_placeholder"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/tv_right_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Black"
+                            android:backgroundTint="@android:color/black"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_right_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ATK: 9  DEF: 0  EXP: 0"
+                            android:backgroundTint="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/rightHealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HP: 100"
+                            android:backgroundTint="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <ProgressBar
+                            android:id="@+id/hpBarRight"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:max="100"
+                            android:progress="100"
+                            android:progressTint="@color/red"
+                            android:indeterminate="false" />
+                        <LinearLayout
+                            android:id="@+id/rightBuffIcons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textBattleInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#99444444"
+                android:padding="8dp"
+                android:scrollbars="vertical"
+                android:text="Battle info..."
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/skill_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skill: 3 left, 0 turn cooldown"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="6dp"
+                android:visibility="visible"
+                android:textSize="14sp"
+                android:background="@color/light_blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAttack"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    app:cornerRadius="20dp"
+                    app:backgroundTint="@color/purple_200"
+                    android:text="Attack" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSkill"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Use Skill"
+                    app:cornerRadius="20dp"
+                    app:backgroundTint="@color/teal_200"
+                    android:layout_marginStart="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAutoBattle"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Auto Battle"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_marginStart="12dp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEndBattle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                app:cornerRadius="20dp"
+                android:backgroundTint="@color/release_button_light"
+                android:text="End Battle" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

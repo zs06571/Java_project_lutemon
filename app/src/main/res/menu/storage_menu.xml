@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/menu_display"
+        android:title="More"
+        android:icon="@drawable/ic_more_vert"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/item_lutemon_list" android:title="Lutemon List" />
+            <item android:id="@+id/item_statistics" android:title="Statistics" />
+        </menu>
+    </item>
+</menu>

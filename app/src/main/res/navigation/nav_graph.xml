@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splash_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_create"
+            app:destination="@id/createLutemonFragment" />
+
+        <action
+            android:id="@+id/action_home_to_list"
+            app:destination="@id/lutemonListFragment" />
+
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@id/lutemonDetailFragment" />
+
+        <action
+            android:id="@+id/action_home_to_stats"
+            app:destination="@id/statisticsFragment" />
+
+        <action
+            android:id="@+id/action_home_to_battle"
+            app:destination="@id/battleFragment" />
+
+        <action
+            android:id="@+id/action_home_to_training"
+            app:destination="@id/trainingFragment" />
+
+        <action
+            android:id="@+id/action_home_to_storage"
+            app:destination="@id/storageFragment" />
+
+        <action
+            android:id="@+id/action_home_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createLutemonFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.CreateLutemonFragment"
+        android:label="Create Lutemon"
+        tools:layout="@layout/fragment_create_lutemon">
+        <action
+            android:id="@+id/action_create_to_home"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_to_lutemon_list"
+            app:destination="@id/lutemonListFragment" />
+        <action
+            android:id="@+id/action_to_lutemon_detail"
+            app:destination="@id/lutemonDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.StorageFragment"
+        android:label="Storage"
+        tools:layout="@layout/fragment_storage">
+        <action
+            android:id="@+id/action_storage_to_list"
+            app:destination="@id/lutemonListFragment" />
+        <action
+            android:id="@+id/action_storage_to_training"
+            app:destination="@id/trainingFragment" />
+        <action
+            android:id="@+id/action_storage_to_statistics"
+            app:destination="@id/statisticsFragment" />
+        <action
+            android:id="@+id/action_storage_to_detail"
+            app:destination="@id/lutemonDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/battleFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.BattleFragment"
+        android:label="Battle"
+        tools:layout="@layout/fragment_battle">
+        <action
+            android:id="@+id/action_battle_to_home"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="leftLutemonId"
+            app:argType="integer" />
+        <argument
+            android:name="rightLutemonId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.TrainingFragment"
+        android:label="Training"
+        tools:layout="@layout/fragment_training" />
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.StatisticsFragment"
+        android:label="Statistics"
+        tools:layout="@layout/fragment_statistics" />
+
+    <fragment
+        android:id="@+id/lutemonListFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.LutemonListFragment"
+        android:label="Lutemon List"
+        tools:layout="@layout/fragment_lutemon_list" />
+
+    <fragment
+        android:id="@+id/lutemonDetailFragment"
+        android:name="com.example.java_project_lutemon.ui.fragment.LutemonDetailFragment"
+        android:label="Lutemon Detail"
+        tools:layout="@layout/fragment_lutemon_detail">
+        <argument
+            android:name="lutemonId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>

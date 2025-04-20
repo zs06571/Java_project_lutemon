@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/storageFragment"
+        android:icon="@drawable/ic_storage"
+        android:title="@string/storage" />
+    <item
+        android:id="@+id/trainingFragment"
+        android:icon="@drawable/ic_state_training"
+        android:title="@string/training" />
+    <item
+        android:id="@+id/battleFragment"
+        android:icon="@drawable/ic_battle"
+        android:title="@string/battle" />
+</menu>

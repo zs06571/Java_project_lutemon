@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="HealthBarView">
+        <attr name="backgroundColor" format="color" />
+        <attr name="healthColor" format="color" />
+    </declare-styleable>
+</resources>
